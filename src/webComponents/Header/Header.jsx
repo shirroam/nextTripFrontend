@@ -9,7 +9,8 @@ const Header = () => {
       <header className="navbar">
         <h1 className="navbar-logo">NextTrip</h1>
         <div className="navbar-buttons">
-          <button className="nav-button" onClick={() => navigate('/')}>Home</button>
+          <button className="nav-button" onClick={() => navigate('/homePage')}>Home</button>
+          <button className="nav-button" onClick={() => navigate('/trips')}>Trips</button>
           <button className="nav-button" onClick={() => navigate('/about')}>About</button>
         </div>
       </header>
