@@ -11,6 +11,7 @@ export default function Router() {
       <Header />
         <Routes>
           {/* <Route path="" element={<Login />} /> */}
+          <Route path="" element={<Homepage />} />
           <Route path="/homePage" element={<Homepage />} />
           <Route path="/trips" element={<Trips />} />
           {/* <Route path="/Trainer" element={<HomepageTrainer />} /> */}
