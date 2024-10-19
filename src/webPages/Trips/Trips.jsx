@@ -6,17 +6,30 @@ import Trip from "../../webComponents/Trip/Trip";
 function Trips() {
     const [trips, setTrips] = useState([]);
 
-    function addTrip(trip) {
-        setTrips((prevTrips) => {
-            return [...prevTrips, {
-                tripName: trip.tripName,
+    // function addTrip(trip) {
+    //     setTrips((prevTrips) => {
+    //         return [...prevTrips, {
+    //             tripName: trip.tripName,
+    //             startDate: trip.startDate,
+    //             endDate: trip.endDate,
+    //             destination: trip.destination,
+    //             transport: trip.transport
+    //         }]
+    //     })
+    // }
+
+    const addTrip = (trip) => {
+        setTrips((prevTrips) => [
+            ...prevTrips, 
+            {
+                tripName: trip.name,
                 startDate: trip.startDate,
                 endDate: trip.endDate,
                 destination: trip.destination,
                 transport: trip.transport
-            }]
-        })
-    }
+            }
+        ]);
+    };
 
     return <div className="Trips">
         <CreateTripArea onAdd={addTrip} />
@@ -25,7 +38,7 @@ function Trips() {
                 <Trip 
                 key={index}
                 id={index}
-                tripName={trip.tripName} 
+                tripName={trip.name} 
                 startDate={trip.startDate}
                 destination={trip.destination}
                 />
