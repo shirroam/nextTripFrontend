@@ -1,44 +1,46 @@
 .trip-box {
-    background: #D9D9D9;
-    border-radius: 25px;
-    padding: 1rem;
-    box-sizing: border-box; /* Ensures padding is included in the width */
+  background: #D9D9D9;
+  border-radius: 25px;
+  padding: 1rem;
+  box-sizing: border-box;
 }
-  
-  /* Name */
-  .trip-box .name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5rem; /* Relative font size */
-    line-height: 1.2;
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center text horizontally */
-    text-align: center;
-    color: #000000;
-  }
-  
-  /* Location and Date */
-  .trip-box .location, .trip-box .date {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.2;
-    color: #000000;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  
-  /* Icons */
-  /* .trip-box .icon {
-    width: 23px;
-    height: 23px;
-    background: #1D1B20;
-    margin-right: 0.5rem;
-  } */
+
+/* Name */
+.trip-box .name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+/* Location and Date Wrappers */
+.location-wrapper, .date-wrapper {
+  display: flex;
+  align-items: center;
+  /* margin-top: 1rem; */
+}
+
+/* Location and Date Text */
+.trip-box .location, .trip-box .date {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #000000;
+  margin-left: 0.5rem;
+}
+
+/* Icons */
+.trip-box i {
+  font-size: 1.25rem; /* Set icon size */
+  color: #1D1B20;
+}
+
   
   /* Calendar */
   /* .trip-box .calendar {
